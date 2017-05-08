@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %} 
+
+{% block body %}
+
+<h1>formulaire</h1>
+<ul>
+     {% for key in films %}
+     <li>{{ key.title|e }}</li>
+     {% endfor %}
+</ul>
+{% endblock %}
+
